@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+
+}
+body {
+  display: flex; /* Важно для корректного выравнивания */
+  flex-direction: column; /* Важно для корректного выравнивания */
+}
+#header{
+  width: 100%;
+  height: 70px;
+  border-bottom: 4px solid silver;
+  background: #333;
+  color: #3c8694;
+  line-height: 70px;
+  margin-bottom: 50px;
+  float: left;
+  padding-bottom 70px;
+}
+#header {
+   position: fixed;
+   top: 0;
+   z-index: 100;
+ }
+
+#reg_in {
+    margin: 10% auto;
+    width: 40%;
+    border: 3px solid;
+    min-height: 400px;
+    max-height: 90%;
+    display: flex;
+}
+#reg_in button {
+    color: black;
+    border-radius: 5px;
+    background-color: green;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem 3rem;
+    justify-content: flex-end;
+}
+#reg_in > *:not(button) {
+    flex-direction: column;
+    justify-content: flex-center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+#reg_in input {
+    color: black;
+    border-radius: 6px;
+    margin-top: 0%;
+    width: 100%;
+    padding: 0.3rem;
+    box-sizing: border-box;
+}
+.int{
+    margin-bottom: 9%;
+
+}
+.int1{
+    margin-bottom: 3%;
+
+}
+#reg_on {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+#reg_in{
+    background-color: white;
+    border: 2mm ridge rgba(0, 0, 0, .9)
+}
+.body{
+    background: #C9FFE5;
+
+}
+
+#reg {
+    position: absolute; /* Изменяем на absolute */
+    top: 0; /* Или любое другое значение, если нужно */
+    right: 0; /* Подставляем к правому краю */
+    width: fit-content;
+}
+#nav li.in {
+   background-color: #333;
+   color: white;
+ }
+#nav li.in_reg {
+   background-color: #333;
+   color: white;
+   position: relative;
+   left: 40%;
+   margin: 0 auto;
+   width: fit-content;
+ }
+#nav {
+  list-style: none;
+  display: block;
+  float: left;
+  width: 90%;
+  text-align: center;
+  position: absolute;
+}
+#nav a li:hover{
+  color:white;
+  background: #333;
+  border-radius: 5px;
+  border-color: #333;
+  cursor: pointer;
+}
+#nav a{
+  text-decoration: none;
+  color: #3c8694;
+}
+#nav li{
+  position: relative;
+  display: inline;
+  background-color: #fafafa;
+  border: 1px solid: silver;
+  padding: 3px 20px;
+  margin-right: 1%;
+  text-decoration: none;
+}
+
+#main {
+  width: 95%;
+  margin-top: 7%;
+  margin-left: 2.5%;
+  margin-right: 2.5%
+  background: #fafafa;
+  float:left;
+  position:relative;
+  z-index: 1;
+}
+#main li{
+    font-size: 18px;
+
+}
+
+#s h1 {
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+}
+#s {
+  margin-left: 2.5%;
+  margin-right: 2.5%
+}
+.sol1 ol{
+  padding: 0;
+  margin: 0;
+}
+.sol1 li{
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 3px 5px;
+    margin: 2px 3px;
+    border-radius: 4px;
+    height: 35px;
+    margin-top: 10px;
+}
+.sol1 li a{
+    text-decoration: none;
+    color: black;
+}
+.sol1 li a:hover{
+    text-decoration: underline;
+    color: #333333;
+}
+.sol1 li:hover{
+    background-color: #A5A5A5;
+
+}
+#s ul li{
+    position: relative;
+    bottom: 20px;
+    margin-bottom: 5px;
+}
+#s h5{
+    position: relative;
+    top: 6px;
+}
+
+.sol2 ol {
+  list-style: none;
+  counter-reset: my-counter;
+}
+.sol2 li::before {
+  content: counter(my-counter) ". ";
+  display: inline-block;
+    position: absolute;
+    left: 0;
+}
+.sol2 li{
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 3px 5px;
+    margin: 2px 3px;
+    border-radius: 4px;
+    height: 35px;
+    margin-top: 10px;
+    position: relative;
+    counter-increment: my-counter;
+}
+.sol2 li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding-left: 20px;
+}
+.sol2 li a:hover{
+    text-decoration: underline;
+    color: #333333;
+}
+.sol2 li:hover{
+    background-color: #A5A5A5;
+
+}
+
+
+.info h6 {
+    font-size: 18px;
+
+}
+.b1{
+    font-size: 20px;
+
+}
+.info h7 {
+    decoration: grey;
+
+}
+.info ul {
+    margin-bottom: -15px;
+    margin-top: 1px;
+}
+
+.info2 {
+    margin-left: 3.5%;
+
+}
+.info2-2 {
+    margin-left: 3.5%;
+
+}
+.info2 h6{
+    font-size: 18px;
+
+}
+.info2-2{
+    color: #6c757d;
+
+}
+.info2-2 h6{
+    font-size: 18px;
+
+}
+
+#footer {
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  border-top: 4px solid silver;
+  background: #333;
+  color: #3c8694;
+  position: absolute;
+}

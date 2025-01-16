@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block  title %}Регистрация{% endblock %}
+
+{% block reg %}
+{% endblock %}
+
+{% block  body %}
+<body class="body">
+    <div id = "reg_in">
+        <form method="post">
+            <div id="reg_on">
+                <p><h1>Регистрация</h1></p>
+                <h3>Login</h3>
+                <input class="int" type="text" name="login" placeholder="Введите login"><br>
+                <h3>Пароль</h3>
+                <input class="int1" type="password" name="password" placeholder="Введите пароль"><br>
+                <h3>Повторите пароль</h3>
+                <input type="password" name="password1" placeholder="Повторите пароль"><br>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css') }}">
+    <title>{% block  title %} {% endblock %}</title>
+</head>
+<body>
+    <div id="header"><ul id='nav'>
+      {% block  index %}<a href="/"><li>Главная</li></a>{% endblock %}
+      <!--{% block  about %}<a href="/about"><li>О нас</li></a>{% endblock %}
+      {% block  contact %}<a href="/contact"><li>Контакты</li></a>{% endblock %}-->
+      {% block  video %}<a href="/video"><li>Видео обучения</li></a>{% endblock %}
+      {% block  spravochik %}<a href="/spravochik"><li>Справочник</li></a>{% endblock %}
+      {% block  reg %}<a href="/reg" id="reg" style="float: right"><li>Регистрация</li></a>{% endblock %}
+    </ul></div>
+    {% block  body %}{% endblock %}
+    <div id="footer">
+        <a href="mailto:blender.guide@mail.ru" target="_blank"><img src="{{ url_for('static', filename='img/mail.png') }}" class="footer-image" alt="law"></a>
+        <a href="mailto:blender.guide@mail.ru" target="_blank"><h5>blender.guide@mail.ru</h5></a>
+    </div>
+</body>
+</html>
