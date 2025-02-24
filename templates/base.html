@@ -18,9 +18,15 @@
       {% block  reg %}<a href="/reg" id="reg" style="float: right"><li>Регистрация</li></a>{% endblock %}
     </ul></div>
     {% block  body %}{% endblock %}
-    <div id="footer">
-        <a href="mailto:blender.guide@mail.ru" target="_blank"><img src="{{ url_for('static', filename='img/mail.png') }}" class="footer-image" alt="law"></a>
-        <a href="mailto:blender.guide@mail.ru" target="_blank"><h5>blender.guide@mail.ru</h5></a>
+    <footer id="footer">
+    <div class="footer-container">
+        <a href="mailto:blender.guide@mail.ru" target="_blank" aria-label="Отправить письмо на blender.guide@mail.ru">
+            <img src="{{ url_for('static', filename='img/mail.png') }}" class="footer-image" alt="Написать нам">
+        </a>
+        <a href="mailto:blender.guide@mail.ru" target="_blank" class="footer-email-link">
+            blender.guide@mail.ru
+        </a>
     </div>
+</footer>
 </body>
 </html>
